@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.quinnox.customercomplaint.pojo.CustomerPojo"
+		table="complaint">
+		<id name="complaintId" length="10" column="complaintid">
+			<generator class="sequence">
+				<param name="sequence">complaint_sequence</param>
+			</generator>
+		</id>
+		<property name="accountId" length="30" column="accountid"></property>
+		<property name="branchCode" length="30" column="branchcode"></property>
+		<property name="email" length="30" column="emailid"></property>
+		<property name="description" length="30" column="description"></property>
+		<property name="category" length="30" column="category"></property>
+		<property name="priority" length="30" column="priority"></property>
+		<property name="status" length="30" column="status"></property>
+		
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.quinnox.customercomplaint.pojo.LoginPojo" table="authentication">
+<id name="accountId" length="10"></id>
+<property name="password" length="30"></property>
+<property name="name" length="30"></property>
+</class>
+</hibernate-mapping>
